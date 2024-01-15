@@ -15,19 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
             document.getElementById('countdown').style.display = 'none';
             document.getElementById('fireworks').style.display = 'block';
-            playFireworks();
         }
     }
-
-    function playFireworks() {
-        const fireworksCanvas = document.getElementById('fireworksCanvas');
-        const fireworksSound = document.getElementById('fireworksSound');
-        
-        fireworksSound.play();
-    }
-
-    // Play fireworks sound on page load
-    playFireworks();
-
     setInterval(updateCountdown, 1000);
 });
