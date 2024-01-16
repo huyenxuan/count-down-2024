@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function () {
     function updateCountdown() {
         const currentDate = new Date();
         const timeDifference = newYearDate - currentDate;
-        
         if (timeDifference > 0) {
             const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
             const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -16,6 +15,12 @@ document.addEventListener('DOMContentLoaded', function () {
             document.getElementById('countdown').style.display = 'none';
             document.getElementById('fireworks').style.display = 'block';
         }
+        // Lấy phần tử iframe YouTube
+        const youtubeIframe = document.getElementById('youtube-iframe');
+        document.getElementById('youtube-iframe').style.display = 'none';
+
+        // Gọi phương thức play() để phát video
+        youtubeIframe.play();
     }
     setInterval(updateCountdown, 1000);
 });
