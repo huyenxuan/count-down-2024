@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const newYearDate = new Date('02/10/2024 00:00:00 GMT+07');
+    const newYearDate = new Date('01/29/2025 00:00:00 GMT+07');
 
     function updateCountdown() {
         const currentDate = new Date();
